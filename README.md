@@ -83,7 +83,7 @@ The website is designed to adapt to different screen sizes, including:
 Add your project screenshot here:
 
 ```text
-![Udemy Clone Homepage](./images/screenshot.png)
+![Udemy Clone Homepage](./images/thumbnail.jpg)
 ```
 
 ## ⚠️ Disclaimer
