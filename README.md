@@ -6,7 +6,7 @@ A static and responsive **Udemy website clone** built using HTML and CSS. This p
 
 ## 🚀 Live Demo
 
-[View Live Website](#https://anishasubramanian.github.io/Udemy_clone)
+[View Live Website](https://anishasubramanian.github.io/Udemy_clone)
 
 ## 📌 Project Overview
 
