@@ -76,16 +76,15 @@ The website is designed to adapt to different screen sizes, including:
 * Tablet
 * Mobile
 
+
+```markdown
 ## 📸 Screenshots
 
 ### Homepage
 
-Add your project screenshot here:
-
-```text
 ![Udemy Clone Homepage](./images/thumbnail.jpg)
-```
 
+```
 ## ⚠️ Disclaimer
 
 This project is created **for educational and practice purposes only**. It is a front-end recreation inspired by the Udemy website and is not affiliated with or endorsed by Udemy.
