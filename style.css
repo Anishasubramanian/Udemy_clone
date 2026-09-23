@@ -94,6 +94,14 @@ body {
   color: white;
   padding: 10px 15px 10px 15px;
   border-radius: 20px;
+  border: rgb(73, 102, 247) 1px solid;
+  cursor: pointer;
+}
+.category h4:hover{
+  transition: 1s;
+  background-color: white;
+  color: #000;
+  border: rgb(73, 102, 247) 1px solid;
 }
 .sales {
   display: flex;
@@ -105,6 +113,20 @@ body {
   background-color: white;
   margin: 4rem;
   width: 20rem;
+  animation-name: zoom;
+  animation-duration: 4s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+@keyframes zoom {
+  0%{
+    opacity: 0;
+    transform: scale(0);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 .sales__img {
   background-image: url(./Images/Sales.jpg);
