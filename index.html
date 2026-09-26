@@ -1,250 +1,270 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Udmey</title>
     <!--Font link-->
-    <link href="https://fonts.googleapis.com/css?family=Vazirmatn:100,200,300,regular,500,600,700,800,900" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Vazirmatn:100,200,300,regular,500,600,700,800,900"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+      rel="stylesheet"
+    />
     <!--My style sheet-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <!--Font-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+      integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
     <!--Navbar-->
     <div class="navbar">
-        <div class="navbar__logo">
-            <h1>Udemy</h1>
+      <div class="navbar__logo">
+        <h1>Udemy</h1>
+      </div>
+      <div class="navbar__search">
+        <i class="fa-solid fa-magnifying-glass" style="color: rgb(0, 0, 0)"></i>
+        <input
+          type="text"
+          placeholder="Search for anything here, e.g., Tech., Business"
+        />
+      </div>
+      <div class="navbar__icons">
+        <p>Courses</p>
+        <!--My learning-->
+        <div class="mylearning">
+          <p>My Learning</p>
+          <div class="mylearning__popup">
+            <p>You did not purchase anything yet</p>
+          </div>
         </div>
-        <div class="navbar__search">
-            <i class="fa-solid fa-magnifying-glass" style="color: rgb(0, 0, 0);"></i>
-            <input type="text" placeholder="Search for anything here, e.g., Tech., Business">
-        </div>
-        <div class="navbar__icons">
-            <p>Courses</p>
-            <!--My learning-->
-            <div class="mylearning">
-                <p>My Learning</p>
-                <div class="mylearning__popup">
-                    <p>You did not purchase anything yet</p>
-                </div>
-            </div>
-            <i class="fa-solid fa-bell" style="color: rgb(0, 0, 0);"></i>
-            <i class="fa-solid fa-cart-shopping" style="color: rgb(0, 0, 0);"></i>
-            <i class="fa-solid fa-user" style="color: rgb(0, 0, 0);"></i>
-        </div>
+        <i class="fa-solid fa-bell" style="color: rgb(0, 0, 0)"></i>
+        <i class="fa-solid fa-cart-shopping" style="color: rgb(0, 0, 0)"></i>
+        <i class="fa-solid fa-user" style="color: rgb(0, 0, 0)"></i>
+      </div>
+      <div class="navbar_humburger">
+        <button><img src="./Images/hamburger.png" alt="" width="20px" height="20px"></button>
+      </div>
     </div>
 
     <!--Category-->
     <div class="category">
-        <h4>Development</h4>
-        <h4>Business</h4>
-        <h4>IT & Software</h4>
-        <h4>Design</h4>
-        <h4>Marketing</h4>
-        <h4>Personal Development</h4>
+      <h4>Development</h4>
+      <h4>Business</h4>
+      <h4>IT & Software</h4>
+      <h4>Design</h4>
+      <h4>Marketing</h4>
+      <h4>Personal Development</h4>
     </div>
 
     <!--Sales-->
     <div class="sales">
-        <div class="sales__img">
-            <div class="sales__desc">
-                <h2>Build your learning routine from ₹449.00</h2>
-                <p>Learning 15 minutes a day can pay off in your career. Offer ends Sept 24.</p>
-                <button>Save Now</button>
-            </div>
+      <div class="sales__img">
+        <div class="sales__desc">
+          <h2>Build your learning routine from ₹449.00</h2>
+          <p>
+            Learning 15 minutes a day can pay off in your career. Offer ends
+            Sept 24.
+          </p>
+          <button>Save Now</button>
         </div>
+      </div>
     </div>
 
     <!--Recommended-->
     <div class="recommended">
-        <h1>Recommended for you</h1>
-        <p>Pick the best fit</p>
-        <div class="recommended__container">
-            <div class="recommended__list">
-                <img src="./Images/c1.jpg" alt="">
-                <h3>AI Engineer Agentic Track: The complete MCP Course</h3>
-                <h5>Ed Donner, Ligency</h5>
-                <div class="recommended__rating">
-                    <p id="bestseller"><b>Bestseller</b></p>
-                    <p>⭐  4.7</p>
-                    <p>67,799 ratings</p>
-                </div>
-                <h4>₹799 <del>₹1999</del></h4>
-            </div>
-            <div class="recommended__list">
-                <img src="./Images/c2.jpg" alt="">
-                <h3>The Complete Claude Code & Claude Cowork Masterclass</h3>
-                <h5>Ed Donner, Ligency</h5>
-                <div class="recommended__rating">
-                    <p id="bestseller"><b>Bestseller</b></p>
-                    <p>⭐  4.7</p>
-                    <p>67,799 ratings</p>
-                </div>
-                <h4>₹799 <del>₹1999</del></h4>
-            </div>
-            <div class="recommended__list">
-                <img src="./Images/c3.jpg" alt="">
-                <h3>100 Days of Code™: The Complete Python Pro Bootcamp</h3>
-                <h5>Ed Donner, Ligency</h5>
-                <div class="recommended__rating">
-                    <p id="bestseller"><b>Bestseller</b></p>
-                    <p>⭐  4.7</p>
-                    <p>67,799 ratings</p>
-                </div>
-                <h4>₹799 <del>₹1999</del></h4>
-            </div>
-            <div class="recommended__list">
-                <img src="./Images/c4.jpg" alt="">
-                <h3>AI Coder: Complete Claude Code & Coding Agents Course</h3>
-                <h5>Ed Donner, Ligency</h5>
-                <div class="recommended__rating">
-                    <p id="bestseller"><b>Bestseller</b></p>
-                    <p>⭐  4.7</p>
-                    <p>67,799 ratings</p>
-                </div>
-                <h4>₹799 <del>₹1999</del></h4>
-            </div>
+      <h1>Recommended for you</h1>
+      <p>Pick the best fit</p>
+      <div class="recommended__container">
+        <div class="recommended__list">
+          <img src="./Images/c1.jpg" alt="" />
+          <h3>AI Engineer Agentic Track: The complete MCP Course</h3>
+          <h5>Ed Donner, Ligency</h5>
+          <div class="recommended__rating">
+            <p id="bestseller"><b>Bestseller</b></p>
+            <p>⭐ 4.7</p>
+            <p>67k ratings</p>
+          </div>
+          <h4>₹799 <del>₹1999</del></h4>
         </div>
-        
+        <div class="recommended__list">
+          <img src="./Images/c2.jpg" alt="" />
+          <h3>The Complete Claude Code & Claude Cowork Masterclass</h3>
+          <h5>Ed Donner, Ligency</h5>
+          <div class="recommended__rating">
+            <p id="bestseller"><b>Bestseller</b></p>
+            <p>⭐ 4.7</p>
+            <p>67k ratings</p>
+          </div>
+          <h4>₹799 <del>₹1999</del></h4>
+        </div>
+        <div class="recommended__list">
+          <img src="./Images/c3.jpg" alt="" />
+          <h3>100 Days of Code™: The Complete Python Pro Bootcamp</h3>
+          <h5>Ed Donner, Ligency</h5>
+          <div class="recommended__rating">
+            <p id="bestseller"><b>Bestseller</b></p>
+            <p>⭐ 4.7</p>
+            <p>67k ratings</p>
+          </div>
+          <h4>₹799 <del>₹1999</del></h4>
+        </div>
+        <div class="recommended__list">
+          <img src="./Images/c4.jpg" alt="" />
+          <h3>AI Coder: Complete Claude Code & Coding Agents Course</h3>
+          <h5>Ed Donner, Ligency</h5>
+          <div class="recommended__rating">
+            <p id="bestseller"><b>Bestseller</b></p>
+            <p>⭐ 4.7</p>
+            <p>67k ratings</p>
+          </div>
+          <h3>₹799 <del>₹1999</del></h3>
+        </div>
+      </div>
     </div>
 
     <!--Topics-->
     <div class="topics">
-        <h1>Topics Recommended For You</h1>
-        <div class="topics__list">
-            <h4>Website</h4>
-            <h4>Javascript</h4>
-            <h4>CSS</h4>
-            <h4>Mongo DB</h4>
-            <h4>Azure</h4>
-            <h4>Docker</h4>
-            <h4>GitHuB</h4>
-            <h4>ReactJS</h4>
-            <h4>AWS</h4>
-        </div>
+      <h1>Topics Recommended For You</h1>
+      <div class="topics__list">
+        <h4>Website</h4>
+        <h4>Javascript</h4>
+        <h4>CSS</h4>
+        <h4>Mongo DB</h4>
+        <h4>Azure</h4>
+        <h4>Docker</h4>
+        <h4>GitHuB</h4>
+        <h4>ReactJS</h4>
+        <h4>AWS</h4>
+      </div>
     </div>
 
     <!--Popular-->
     <div class="popular">
-        <h1>Popular Courses</h1>
-        <p>Pick the best fit</p>
-        <div class="recommended__container">
-            <div class="recommended__list">
-                <img src="./Images/c1.jpg" alt="">
-                <h3>AI Engineer Agentic Track: The complete MCP Course</h3>
-                <h5>Ed Donner, Ligency</h5>
-                <div class="recommended__rating">
-                    <p id="bestseller"><b>Bestseller</b></p>
-                    <p>⭐  4.7</p>
-                    <p>67,799 ratings</p>
-                </div>
-                <h4>₹799 <del>₹1999</del></h4>
-            </div>
-            <div class="recommended__list">
-                <img src="./Images/c2.jpg" alt="">
-                <h3>The Complete Claude Code & Claude Cowork Masterclass</h3>
-                <h5>Ed Donner, Ligency</h5>
-                <div class="recommended__rating">
-                    <p id="bestseller"><b>Bestseller</b></p>
-                    <p>⭐  4.7</p>
-                    <p>67,799 ratings</p>
-                </div>
-                <h4>₹799 <del>₹1999</del></h4>
-            </div>
-            <div class="recommended__list">
-                <img src="./Images/c3.jpg" alt="">
-                <h3>100 Days of Code™: The Complete Python Pro Bootcamp</h3>
-                <h5>Ed Donner, Ligency</h5>
-                <div class="recommended__rating">
-                    <p id="bestseller"><b>Bestseller</b></p>
-                    <p>⭐  4.7</p>
-                    <p>67,799 ratings</p>
-                </div>
-                <h4>₹799 <del>₹1999</del></h4>
-            </div>
-            <div class="recommended__list">
-                <img src="./Images/c4.jpg" alt="">
-                <h3>AI Coder: Complete Claude Code & Coding Agents Course</h3>
-                <h5>Ed Donner, Ligency</h5>
-                <div class="recommended__rating">
-                    <p id="bestseller"><b>Bestseller</b></p>
-                    <p>⭐  4.7</p>
-                    <p>67,799 ratings</p>
-                </div>
-                <h4>₹799 <del>₹1999</del></h4>
-            </div>
-            <div class="recommended__list">
-                <img src="./Images/c1.jpg" alt="">
-                <h3>AI Engineer Agentic Track: The complete MCP Course</h3>
-                <h5>Ed Donner, Ligency</h5>
-                <div class="recommended__rating">
-                    <p id="bestseller"><b>Bestseller</b></p>
-                    <p>⭐  4.7</p>
-                    <p>67,799 ratings</p>
-                </div>
-                <h4>₹799 <del>₹1999</del></h4>
-            </div>
-            <div class="recommended__list">
-                <img src="./Images/c2.jpg" alt="">
-                <h3>The Complete Claude Code & Claude Cowork Masterclass</h3>
-                <h5>Ed Donner, Ligency</h5>
-                <div class="recommended__rating">
-                    <p id="bestseller"><b>Bestseller</b></p>
-                    <p>⭐  4.7</p>
-                    <p>67,799 ratings</p>
-                </div>
-                <h4>₹799 <del>₹1999</del></h4>
-            </div>
-            <div class="recommended__list">
-                <img src="./Images/c3.jpg" alt="">
-                <h3>100 Days of Code™: The Complete Python Pro Bootcamp</h3>
-                <h5>Ed Donner, Ligency</h5>
-                <div class="recommended__rating">
-                    <p id="bestseller"><b>Bestseller</b></p>
-                    <p>⭐  4.7</p>
-                    <p>67,799 ratings</p>
-                </div>
-                <h4>₹799 <del>₹1999</del></h4>
-            </div>
-            <div class="recommended__list">
-                <img src="./Images/c4.jpg" alt="">
-                <h3>AI Coder: Complete Claude Code & Coding Agents Course</h3>
-                <h5>Ed Donner, Ligency</h5>
-                <div class="recommended__rating">
-                    <p id="bestseller"><b>Bestseller</b></p>
-                    <p>⭐  4.7</p>
-                    <p>67,799 ratings</p>
-                </div>
-                <h4>₹799 <del>₹1999</del></h4>
-            </div>
+      <h1>Popular Courses</h1>
+      <p>Pick the best fit</p>
+      <div class="recommended__container">
+        <div class="recommended__list">
+          <img src="./Images/c1.jpg" alt="" />
+          <h3>AI Engineer Agentic Track: The complete MCP Course</h3>
+          <h5>Ed Donner, Ligency</h5>
+          <div class="recommended__rating">
+            <p id="bestseller"><b>Bestseller</b></p>
+            <p>⭐ 4.7</p>
+            <p>67k ratings</p>
+          </div>
+          <h4>₹799 <del>₹1999</del></h4>
         </div>
+        <div class="recommended__list">
+          <img src="./Images/c2.jpg" alt="" />
+          <h3>The Complete Claude Code & Claude Cowork Masterclass</h3>
+          <h5>Ed Donner, Ligency</h5>
+          <div class="recommended__rating">
+            <p id="bestseller"><b>Bestseller</b></p>
+            <p>⭐ 4.7</p>
+            <p>67k ratings</p>
+          </div>
+          <h4>₹799 <del>₹1999</del></h4>
+        </div>
+        <div class="recommended__list">
+          <img src="./Images/c3.jpg" alt="" />
+          <h3>100 Days of Code™: The Complete Python Pro Bootcamp</h3>
+          <h5>Ed Donner, Ligency</h5>
+          <div class="recommended__rating">
+            <p id="bestseller"><b>Bestseller</b></p>
+            <p>⭐ 4.7</p>
+            <p>67k ratings</p>
+          </div>
+          <h4>₹799 <del>₹1999</del></h4>
+        </div>
+        <div class="recommended__list">
+          <img src="./Images/c4.jpg" alt="" />
+          <h3>AI Coder: Complete Claude Code & Coding Agents Course</h3>
+          <h5>Ed Donner, Ligency</h5>
+          <div class="recommended__rating">
+            <p id="bestseller"><b>Bestseller</b></p>
+            <p>⭐ 4.7</p>
+            <p>67k ratings</p>
+          </div>
+          <h4>₹799 <del>₹1999</del></h4>
+        </div>
+        <div class="recommended__list">
+          <img src="./Images/c1.jpg" alt="" />
+          <h3>AI Engineer Agentic Track: The complete MCP Course</h3>
+          <h5>Ed Donner, Ligency</h5>
+          <div class="recommended__rating">
+            <p id="bestseller"><b>Bestseller</b></p>
+            <p>⭐ 4.7</p>
+            <p>67k ratings</p>
+          </div>
+          <h4>₹799 <del>₹1999</del></h4>
+        </div>
+        <div class="recommended__list">
+          <img src="./Images/c2.jpg" alt="" />
+          <h3>The Complete Claude Code & Claude Cowork Masterclass</h3>
+          <h5>Ed Donner, Ligency</h5>
+          <div class="recommended__rating">
+            <p id="bestseller"><b>Bestseller</b></p>
+            <p>⭐ 4.7</p>
+            <p>67k ratings</p>
+          </div>
+          <h4>₹799 <del>₹1999</del></h4>
+        </div>
+        <div class="recommended__list">
+          <img src="./Images/c3.jpg" alt="" />
+          <h3>100 Days of Code™: The Complete Python Pro Bootcamp</h3>
+          <h5>Ed Donner, Ligency</h5>
+          <div class="recommended__rating">
+            <p id="bestseller"><b>Bestseller</b></p>
+            <p>⭐ 4.7</p>
+            <p>67k ratings</p>
+          </div>
+          <h4>₹799 <del>₹1999</del></h4>
+        </div>
+        <div class="recommended__list">
+          <img src="./Images/c4.jpg" alt="" />
+          <h3>AI Coder: Complete Claude Code & Coding Agents Course</h3>
+          <h5>Ed Donner, Ligency</h5>
+          <div class="recommended__rating">
+            <p id="bestseller"><b>Bestseller</b></p>
+            <p>⭐ 4.7</p>
+            <p>67k ratings</p>
+          </div>
+          <h4>₹799 <del>₹1999</del></h4>
+        </div>
+      </div>
     </div>
 
     <!--Footer-->
     <div class="footer">
-        <div class="footer__s1">
-            <div class="footer__s1__one">
-                <p>Udemy Business</p>
-                <p>Teach On Udemy</p>
-                <p>Get the app</p>
-                <p>About Us</p>
-                <p>Contact Us</p>
-            </div>
-            <div class="footer__s1__two">
-                <p>Careers</p>
-                <p>Blog</p>
-                <p>Help and Support</p>
-                <p>Affliate</p>
-                <p>Investors</p>
-            </div>
+      <div class="footer__s1">
+        <div class="footer__s1__one">
+          <p>Udemy Business</p>
+          <p>Teach On Udemy</p>
+          <p>Get the app</p>
+          <p>About Us</p>
+          <p>Contact Us</p>
         </div>
-        <div class="footer__s2">
-            <h1>Udemy</h1>
-            <p>&copy; Udemy,Inc</p>
+        <div class="footer__s1__two">
+          <p>Careers</p>
+          <p>Blog</p>
+          <p>Help and Support</p>
+          <p>Affliate</p>
+          <p>Investors</p>
         </div>
+      </div>
+      <div class="footer__s2">
+        <h1>Udemy</h1>
+        <p>&copy; Udemy,Inc</p>
+      </div>
     </div>
-</body>
+  </body>
 </html>
