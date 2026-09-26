@@ -11,7 +11,7 @@ body {
 .navbar {
   position: sticky;
   top: 0;
- 
+  z-index: 3;
   background-color: white;
   display: flex;
   flex-direction: row;
@@ -36,7 +36,7 @@ body {
   padding: 1rem;
   border: black 1px solid;
   border-radius: 30px;
-  width: 40rem;
+  width: 45%;
 }
 .navbar__search input {
   width: 80%;
@@ -49,12 +49,21 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 1rem;
   height: 60px;
 }
 .navbar__icons p {
+  font-size: 12px;
   margin: 0;
   line-height: 1;
+}
+.navbar_humburger button{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.navbar_humburger{
+  display: none;
 }
 /* My learning popup*/
 .mylearning{
@@ -80,8 +89,7 @@ body {
 }
 .category {
   display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
+  
   justify-content: space-around;
   align-items: flex-start;
   padding: 10px;
@@ -111,8 +119,8 @@ body {
 .sales__desc{
   padding: 20px;
   background-color: white;
-  margin: 4rem;
-  width: 25rem;
+  margin: 2rem;
+  width: 50vh;
   animation-name: zoom;
   animation-duration: 4s;
   opacity: 0;
@@ -146,7 +154,7 @@ body {
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 22rem;
+  height: 18rem;
   margin: 0 5% 0 5%;
 }
 .recommended,
@@ -164,10 +172,11 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 10px;
 }
 .recommended__list {
-  width: 312px;
+  flex-grow: 1;
+  flex-basis: 20%;
   padding: 16px;
   border: black 0.5px solid;
   border-radius: 20px;
@@ -185,16 +194,15 @@ body {
 }
 .recommended__rating {
   display: flex;
-  justify-content: flex-start;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 10px;
-  height: 30px;
+  gap: 0.6rem;
 }
 .recommended__rating p {
   border: #000 0.8px solid;
   border-radius: 5px;
   padding: 3px 5px 0px 5px;
-  font-size: 12px;
+  font-size: 0.8rem;
   display: flex;
   align-items: center;
 }
@@ -228,7 +236,7 @@ body {
 .footer__s1 {
   display: flex;
   flex-wrap: wrap;
-  gap: 10rem;
+  gap: 10%;
   margin-bottom: 20px;
   border-bottom: #fff 0.8px solid;
 }
@@ -244,4 +252,45 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+/*Media Queries*/
+@media screen and (max-width:800px) {
+  body{
+    font-size: 16px;
+  }
+  .navbar__search, .navbar__icons{
+    display: none;
+  }
+  .navbar_humburger{
+    display: block;
+  }
+  .category{
+    display: none;
+  }
+  .recommended__list {
+    flex-basis: 40%;
+  }
+}
+@media screen and (max-width:600px) {
+  body{
+    font-size: 14px;
+  }
+  .sales__desc{
+    width: 250px;
+    margin-bottom: 0;
+  }
+  .recommended__list{
+    padding: 10px;
+  }
+  .recommended__list h3{
+    font-size: 14px;
+  }
+  .recommended__list p{
+    font-size: 8px;
+    padding: 2px 4px 2px 4px;
+  }
+  .recommended__rating{
+    gap: 2px;
+  }
 }
